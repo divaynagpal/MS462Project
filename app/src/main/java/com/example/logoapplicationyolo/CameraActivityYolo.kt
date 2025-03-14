@@ -98,8 +98,8 @@ class CameraActivityYolo : AppCompatActivity() {
             imageView.setImageBitmap(imageBitmap)
 
             // Uncomment below to use the Yolo Model you have created.
-            runYoloInference(imageBitmap)
-            //sendToGoogleVision(imageBitmap)
+            //runYoloInference(imageBitmap)
+            sendToGoogleVision(imageBitmap)
 
 
         }
@@ -182,7 +182,7 @@ class CameraActivityYolo : AppCompatActivity() {
 
         var offers: List<Offer> = mutableListOf()
         println(merchantName)
-        if(merchantName.contains("NIKE"))
+        if(merchantName.contains("NIKE", true))
         {
             offers = listOf(
                 Offer("🔥 10% off on your sports shoes!"),
