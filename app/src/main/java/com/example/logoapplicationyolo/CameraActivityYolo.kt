@@ -36,7 +36,7 @@ class CameraActivityYolo : AppCompatActivity() {
     //private lateinit var resultTextView1: TextView
     private lateinit var resultTextView2: TextView
     private val CAMERA_PERMISSION_REQUEST_CODE = 100
-    private val cloudVisionApiKey = "AIzaSyCWjhppG_cbp0SFCPL3zJWmQ1b6-a_vS9I"
+    private val cloudVisionApiKey = "" // Add your api key
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var yoloModel: YoloTfliteInference
     private lateinit var recyclerView: RecyclerView
