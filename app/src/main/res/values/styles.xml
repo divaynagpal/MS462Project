@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base Theme -->
+    <style name="Theme.LogoApplicationYolo1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorPrimaryVariant">@color/toolbarColorDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:toolbarStyle">@style/CustomToolbar</item>
+    </style>
+    <style name="CustomToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/toolbarColor</item>
+        <item name="android:popupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+        <item name="titleTextAppearance">@style/CustomTextAppearance</item>
+    </style>
+    <!-- Toolbar Customization -->
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/toolbarColor</item>
+        <item name="android:titleTextStyle">@style/CustomActionBarTitle</item>
+    </style>
+
+    <!-- Toolbar Title Customization -->
+    <style name="CustomActionBarTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- Change Font -->
+    </style>
+
+    <!-- Custom Toolbar Theme -->
+    <style name="CustomToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:colorBackground">@color/toolbarColor</item>
+    </style>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item> <!-- White Text -->
+        <item name="android:textSize">22sp</item> <!-- Bigger Font Size -->
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- Existing System Font -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
